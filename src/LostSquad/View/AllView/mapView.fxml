@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+
+<Pane fx:id="mapPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120" prefWidth="236" style="-fx-background-color: ORANGE;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controler.MapViewController">
+   <children>
+      <Label fx:id="zoneName" layoutX="84.0" layoutY="1.0" style="-fx-text-fill: black;" text="ZONE NAME" textAlignment="CENTER" />
+      <Pane fx:id="mapDrawPane" layoutY="17.0" prefHeight="103.0" prefWidth="236.0" style="-fx-background-color: NAVY;">
+         <children>
+            <ImageView fx:id="playerPos" fitHeight="10" fitWidth="10" layoutX="55.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                  <image>
+                      <Image url="@AllView/PlayerOnMap.png" />
+                  </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</Pane>

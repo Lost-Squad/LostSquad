@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@img/StairRoom/Stairoom_st2_back.jpg" />
+         </image>
+      </ImageView>
+      <Pane id="direc" layoutX="269.0" layoutY="320.0" prefHeight="66.0" prefWidth="62.0">
+         <children>
+            <ImageView id="stairs" fitHeight="63.0" fitWidth="63.0">
+               <image>
+                  <Image url="@img/fleche.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane id="direc" layoutX="348.0" layoutY="177.0" prefHeight="73.0" prefWidth="78.0">
+         <children>
+            <ImageView id="back" fitHeight="63.0" fitWidth="78.0">
+               <image>
+                  <Image url="@img/StairRoom/Stairoom_st2_metro2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane id="direc" layoutX="522.0" layoutY="129.0" prefHeight="66.0" prefWidth="78.0">
+         <children>
+            <ImageView id="stairs" fitHeight="63.0" fitWidth="78.0">
+               <image>
+                  <Image url="@img/StairRoom/Stairoom_st2_outside.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane id="meuble" layoutX="448.0" layoutY="242.0" prefHeight="133.0" prefWidth="88.0">
+         <children>
+            <ImageView id="chest" fitHeight="125.0" fitWidth="88.0">
+               <image>
+                  <Image url="@img/StairRoom/Stairoom_st2_poubelle.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

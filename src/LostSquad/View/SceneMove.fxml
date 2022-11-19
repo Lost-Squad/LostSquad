@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="720.0" minWidth="1080.0" style="-fx-background-image:url('/LostSquad/View/AllView/img/fond.png');" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LostSquad.Controler.ControlPlayer">
+         <bottom>
+            <HBox fx:id="toolbar" prefWidth="${(scene.width)}" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="statView" prefHeight="200.0" prefWidth="240.0" style="-fx-background-color: ORANGE;">
+                     <children>  
+                        <Label fx:id="Money" alignment="CENTER" layoutX="95.0" layoutY="150.0" prefHeight="31.0" prefWidth="84.0" text="5" />          
+                        <ImageView fitHeight="41.0" fitWidth="42.0" layoutX="83.0" layoutY="145.0" pickOnBounds="true">
+                            <image>
+                                <Image preserveRatio="true" smooth="true" url="@AllView/img/goldCoin5.png" />
+                            </image>
+                        </ImageView>
+                        <ProgressBar fx:id="PV" layoutX="11.0" layoutY="59.0" prefHeight="23.0" prefWidth="124.0" progress="1.0" rotate="90.0" style="-fx-accent: red;" />
+                        <ProgressBar fx:id="Armor" layoutX="96.0" layoutY="59.0" prefHeight="23.0" prefWidth="124.0" progress="1.0" rotate="90.0" style="-fx-accent: gold;" />   
+                     </children>
+                  </Pane>
+                  <BorderPane prefHeight="200.0" prefWidth="400.0" style="-fx-background-image:url('/LostSquad/View/AllView/img/background_Button.jpg');">
+                     <center>
+                        <Pane fx:id="paneControlPlayer" prefHeight="201.0" prefWidth="400.0">
+                            <children>
+                                <Button id="btnGo" layoutX="36.0" layoutY="28.0" mnemonicParsing="false" onAction="#btnAction" text="GO" />
+                                <Button id="btnAttack" layoutX="303.0" layoutY="28.0" mnemonicParsing="false" onAction="#btnAction" text="ATTACK" />
+                                <Button id="btnLook" layoutX="310.0" layoutY="148.0" mnemonicParsing="false" onAction="#btnAction" text="LOOK" />
+                                <Button id="btnLoot" layoutX="28.0" layoutY="148.0" mnemonicParsing="false" onAction="#btnAction" text="LOOT" />
+                                <Button id="btnExit" layoutX="176.0" layoutY="85.0" mnemonicParsing="false" onAction="#exit" text="EXIT" />
+                            </children>
+                        </Pane>
+                    </center>
+                  </BorderPane>
+                  <fx:include fx:id="descBox" source="descBox.fxml" />
+               </children>
+            </HBox>
+         </bottom>
+         <left>
+            <VBox fx:id="coteLeft" prefHeight="${(scene.height-toolbar.height)}" prefWidth="240.0" style="-fx-background-color: ORANGE;" BorderPane.alignment="CENTER">
+               <children>
+                  <fx:include fx:id="map" prefHeight="120" source="mapView.fxml" />
+                  <fx:include fx:id="inventory" prefHeight="${(coteLeft.height-map.height)}" source="InventoryListView.fxml" />
+               </children>
+            </VBox>
+         </left>
+         <center>          
+            <BorderPane fx:id="paneVueGame" BorderPane.alignment="CENTER">
+               <children> 
+                   <fx:include source="pageBlache.fxml" />
+               </children>
+            </BorderPane>
+         </center>
+</BorderPane>

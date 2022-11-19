@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="431.0" fitWidth="692.0" layoutX="-22.0" layoutY="-51.0" pickOnBounds="true" rotate="-90.0">
+         <image>
+            <Image url="@img/end.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="143.0" fitWidth="345.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/tobecontinued.png" />
+         </image>
+      </ImageView>  
+   </children>
+</AnchorPane>

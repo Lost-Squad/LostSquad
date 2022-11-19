@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@img/Outside/outside_back.jpg" />
+         </image>
+      </ImageView>
+      <Pane id="direc" layoutX="285.0" layoutY="310.0" prefHeight="77.0" prefWidth="44.0">
+         <children>
+            <ImageView id="house" fitHeight="77.0" fitWidth="40.0" layoutY="-1.0">
+               <image>
+                  <Image url="@img/Outside/outside_porte.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane id="direc" layoutX="375.0" layoutY="334.0" prefHeight="66.0" prefWidth="62.0">
+         <children>
+            <ImageView id="back" fitHeight="63.0" fitWidth="63.0">
+               <image>
+                  <Image url="@img/fleche.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane id="enemy" layoutX="2.0" layoutY="250.0" prefHeight="147.0" prefWidth="168.0">
+         <children>
+            <ImageView id="Tibo" fitHeight="144.0" fitWidth="167.0">
+               <image>
+                  <Image url="@img/trader.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ProgressBar?>
+
+<VBox fx:id="vbox_inventory" layoutY="1.0" prefHeight="635.0" prefWidth="236.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LostSquad.Controler.InventoryListViewController">
+   <children>
+      <Pane fx:id="equipped" maxHeight="180" prefHeight="180.0" prefWidth="240.0">
+         <children>
+            <ImageView fx:id="destination_center" fitHeight="147.0" fitWidth="236.0" layoutX="40.0" layoutY="17.0" onDragDropped="#handleImageDropCenter" onDragOver="#handleImageDragOverCenter" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@AllView/img/punch.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="destination_top" fitHeight="23.0" fitWidth="39.0" layoutX="93.0" layoutY="6.0" onDragDropped="#handleImageDropTop" onDragOver="#handleImageDragOverTop" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@AllView/img/box.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="destination_left" fitHeight="23.0" fitWidth="39.0" layoutX="14.0" layoutY="34.0" onDragDropped="#handleImageDropLeft" onDragOver="#handleImageDragOverLeft" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@AllView/img/box.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="destination_right" fitHeight="23.0" fitWidth="39.0" layoutX="205.0" layoutY="39.0" onDragDropped="#handleImageDropRight" onDragOver="#handleImageDragOverRight" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@AllView/img/box.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="destination_bottomL" fitHeight="23.0" fitWidth="39.0" layoutX="103.0" layoutY="82.0" onDragDropped="#handleImageDropBottomL" onDragOver="#handleImageDragOverBottomL" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@AllView/img/charger.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="destination_bottomR" fitHeight="23.0" fitWidth="39.0" layoutX="164.0" layoutY="72.0" onDragDropped="#handleImageDropBottomR" onDragOver="#handleImageDragOverBottomR" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@AllView/img/box.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ListView fx:id="itemList" onDragDetected="#handleDragDetection" onDragDone="#handleDragDone" onDragDropped="#handleImageDropOnList" onDragOver="#handleImageDragOverList" prefHeight="${(vbox_inventory.height-250)}" prefWidth="236.0" />
+      <Pane fx:id="stats" prefHeight="100.0" prefWidth="240">
+         <children>
+            <ProgressBar fx:id="progressBarInventory" prefHeight="20.0" prefWidth="240.0" progress="0.0" style="-fx-accent: cyan;"/>
+            <ImageView fx:id="destination_health" fitHeight="40.0" fitWidth="50" layoutX="55.0" layoutY="38.0" onDragDropped="#handleImageDropHealth" onDragOver="#handleImageDragOverHealth" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@AllView/img/heart.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="destination_shield" fitHeight="60.0" fitWidth="60" layoutX="130.0" layoutY="33.0" onDragDropped="#handleImageDropShield" onDragOver="#handleImageDragOverShield" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@AllView/img/shield.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</VBox>

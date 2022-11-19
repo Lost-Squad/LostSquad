@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@img/House2/house2_back.jpg" />
+         </image>
+      </ImageView>
+      <Pane id="direc" layoutX="39.0" layoutY="137.0" prefHeight="227.0" prefWidth="104.0">
+         <children>
+            <ImageView id="door" fitHeight="225.0" fitWidth="103.0">
+               <image>
+                  <Image url="@img/House2/house2_porte1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane id="direcLock" layoutX="483.0" layoutY="136.0" prefHeight="232.0" prefWidth="68.0">
+         <children>
+            <ImageView id="storage" fitHeight="230.0" fitWidth="65.0">
+               <image>
+                  <Image url="@img/House2/house2_porte2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane id="direc" layoutX="269.0" layoutY="320.0" prefHeight="66.0" prefWidth="62.0">
+         <children>
+            <ImageView id="ark" fitHeight="63.0" fitWidth="63.0">
+               <image>
+                  <Image url="@img/fleche.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

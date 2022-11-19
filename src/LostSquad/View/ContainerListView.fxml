@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox_container" alignment="TOP_CENTER" maxHeight="200.0" maxWidth="-Infinity" minHeight="200.0" minWidth="440.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LostSquad.Controler.ContainerListViewController">
+   <children>
+      <Label fx:id="name" alignment="CENTER" prefHeight="68.0" prefWidth="${(vbox_container.width)}" textAlignment="CENTER">
+         <font>
+            <Font name="DejaVu Sans Bold" size="40.0" />
+         </font></Label>
+      <ListView fx:id="itemList" onDragDetected="#handleDragDetection" onDragDone="#handleDragDone" onDragDropped="#handleImageDropOnList" onDragOver="#handleImageDragOverList" prefHeight="138.0" prefWidth="600.0" />
+   </children>
+</VBox>
